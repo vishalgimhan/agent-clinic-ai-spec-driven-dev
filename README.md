@@ -68,3 +68,20 @@ Refer to specs/mission.md and specs/tech-stack.md for guidance
 
 Important: You *must* user your AskUserQuestion tool, grouped on these 3, before writing to disk
 ```
+
+Add a task group to the plan to have minimal AgentClinic home page and update the rest of the feature spec to be in sync
+
+clear history
+ ```
+Implement the remaining task groups
+```
+
+npm run dev and check the progress
+
+When suggesting an update
+```
+Update specs/2026-04-16 -hello-hono/plan/md and implmentation of a main layout component with a header/main/footer as three subcomponents. Make a CSS file, import it and link to it.
+```
+
+if Replanning Project
+create new branch
