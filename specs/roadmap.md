@@ -14,41 +14,30 @@ Phases are intentionally small — each one is a shippable slice of work, indepe
 - Basic CSS (custom properties, reset, typography)
 - All routes render inside the shared layout
 
-## Phase 3 — Agent List
+## Phase 3 — Agent Management
 - SQLite database + first migration (`agents` table)
 - Seed a handful of fictional agents
 - `/agents` page listing all agents
+- `/agents/:id` page showing a single agent's profile (name, model type, status, complaints)
 
-## Phase 4 — Agent Detail
-- `/agents/:id` page showing a single agent's profile
-- Name, model type, current status, presenting complaints
-
-## Phase 5 — Ailments Catalog
-- `ailments` table + seed data (e.g., "context-window claustrophobia", "prompt fatigue")
-- `/ailments` list page
-- Link agents to one or more ailments
-
-## Phase 6 — Therapies Catalog
-- `therapies` table + seed data
-- `/therapies` list page
-- Map ailments → recommended therapies
-
-## Phase 7 — Appointment Booking
+## Phase 4 — Ailments, Therapies & Booking
+- `ailments` table + seed data; `/ailments` list page
+- `therapies` table + seed data; `/therapies` list page
+- Link agents to ailments; map ailments to recommended therapies
 - `appointments` table (agent, therapist, datetime, status)
-- Form to book an appointment from an agent's detail page
-- Basic validation and confirmation page
+- Form to book an appointment from an agent's detail page; validation and confirmation
 
-## Phase 8 — Staff Dashboard
+## Phase 5 — Staff Dashboard
 - `/dashboard` with summary counts: agents, open appointments, ailments in-flight
 - Simple table views for staff to manage records
 - Mary's dashboard is now real
 
-## Phase 9 — Polish & Accessibility
+## Phase 6 — Polish & Accessibility
 - Responsive layout for Steve's modern-browser requirement
 - Semantic HTML audit
 - Keyboard navigation and focus styles
 
-## Phase 10 — Hardening
+## Phase 7 — Hardening
 - Error pages (404, 500)
 - Input sanitization on all forms
 - Basic logging middleware

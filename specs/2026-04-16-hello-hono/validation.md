@@ -30,6 +30,7 @@ HTTP status must be `200 OK`. Response body must be HTML and must contain:
 
 - An `<h1>` element with the text `AgentClinic`
 - A tagline (any short descriptive text; exact wording is implementation choice)
+- A `<meta name="viewport" content="width=device-width, initial-scale=1.0">` tag for responsive design
 
 ### 4. Automated tests pass
 

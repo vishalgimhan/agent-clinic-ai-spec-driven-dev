@@ -1,5 +1,7 @@
 export const Footer = () => (
   <footer>
-    <p>&copy; 2026 AgentClinic</p>
+    <div class="container">
+      <p>&copy; 2026 AgentClinic</p>
+    </div>
   </footer>
 )

@@ -1,6 +1,6 @@
 export const Header = () => (
   <header>
-    <nav>
+    <nav class="container">
       <strong>AgentClinic</strong>
     </nav>
   </header>

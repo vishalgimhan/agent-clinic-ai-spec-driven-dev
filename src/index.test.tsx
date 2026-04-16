@@ -7,5 +7,6 @@ describe('AgentClinic App', () => {
     expect(res.status).toBe(200)
     const body = await res.text()
     expect(body).toContain('<h1>AgentClinic</h1>')
+    expect(body).toContain('<meta name="viewport" content="width=device-width, initial-scale=1.0"/>')
   })
 })

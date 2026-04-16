@@ -101,3 +101,18 @@ More changes
 ```
 The product's web UI should follow responsive design. Update the product specs and all feature specs to reflects this, as well as my code
 ```
+Replanning road map
+```
+Go to the roadmap.md and combine phase 3-4 into a new phase 3. And 5-6-7 into a single phase
+```
+
+Changelog skill
+```
+I want to keep a CHANGELOG.md in the project root, with headings for dates. If not changelog, examine git commits and add bullets for each date. Then, as we work, will manually invoke this kill before merging. Help me write a skill for this
+```
+Merge
+```
+Commit this, switch to main, and merge this branch
+```
+
+Working on next feature

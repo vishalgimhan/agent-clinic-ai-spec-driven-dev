@@ -1,27 +1,54 @@
+:root {
+  --primary-color: #0056b3;
+  --text-color: #333;
+  --bg-color: #f4f4f9;
+  --border-color: #ccc;
+  --max-width: 800px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.5;
-  max-width: 800px;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #f4f4f9;
-  color: #333;
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
 
 footer {
   margin-top: 4rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--border-color);
   padding-top: 1rem;
   font-size: 0.875rem;
   color: #666;
 }
 
 h1 {
-  color: #0056b3;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
 }
