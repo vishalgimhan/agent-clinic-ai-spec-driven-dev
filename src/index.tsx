@@ -3,7 +3,7 @@ import { serve } from '@hono/node-server'
 import { serveStatic } from '@hono/node-server/serve-static'
 import { Home } from './pages/Home.js'
 
-const app = new Hono()
+export const app = new Hono()
 
 app.use('/static/*', serveStatic({ root: './' }))
 
@@ -12,9 +12,11 @@ app.get('/', (c) => {
 })
 
 const port = 3000
-console.log(`Server is running on http://localhost:${port}`)
 
-serve({
-  fetch: app.fetch,
-  port
-})
+if (process.env['NODE_ENV'] !== 'test') {
+  console.log(`Server is running on http://localhost:${port}`)
+  serve({
+    fetch: app.fetch,
+    port
+  })
+}

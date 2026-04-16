@@ -85,3 +85,19 @@ Update specs/2026-04-16 -hello-hono/plan/md and implmentation of a main layout c
 
 if Replanning Project
 create new branch
+
+```
+Update this tech-stack.md to capture that we want to use Vitest tests for validation and write a scipte in package.json
+```
+```
+Update existing specs and code to reflect these testing changes
+```
+```
+Write a new test suite using the specified testing framework
+```
+run tests and check
+
+More changes
+```
+The product's web UI should follow responsive design. Update the product specs and all feature specs to reflects this, as well as my code
+```

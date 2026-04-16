@@ -2,12 +2,11 @@
 
 ## Scope
 
-Install and configure Hono with a `tsx` dev server. Expose a single `/` route that renders a minimal HTML home page via Hono JSX. Confirm TypeScript types work end-to-end.
+Install and configure Hono with a `tsx` dev server. Expose a single `/` route that renders a minimal HTML home page via Hono JSX. Confirm TypeScript types work end-to-end. Configure Vitest for automated testing.
 
 ## Out of Scope
 
 - No shared layout or navigation (Phase 2)
-- No test framework setup (Vitest deferred to a later phase)
 - No database or additional routes
 - No CI/CD pipeline
 

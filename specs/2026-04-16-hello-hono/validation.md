@@ -31,16 +31,23 @@ HTTP status must be `200 OK`. Response body must be HTML and must contain:
 - An `<h1>` element with the text `AgentClinic`
 - A tagline (any short descriptive text; exact wording is implementation choice)
 
-### 4. Hono version is pinned
+### 4. Automated tests pass
+
+```
+npm test
+```
+
+Must exit with code 0. This verifies the application's behavior via Vitest.
+
+### 5. Hono version is pinned
 
 `package.json` must list `hono` without a `^` or `~` range prefix.
 
-### 5. Strict TypeScript is on
+### 6. Strict TypeScript is on
 
 `tsconfig.json` must contain `"strict": true`.
 
 ## Not Required
 
-- No automated tests needed for this phase
 - No CI pipeline required
 - Browser rendering not checked (curl is sufficient)

@@ -3,7 +3,7 @@
 ## Group 1 — Package Setup
 
 1. Install `hono` (pin exact version, no `^` prefix)
-2. Install `tsx` as a dev dependency
+2. Install `tsx` and `vitest` as dev dependencies (pinned)
 3. Verify `tsconfig.json` has `"strict": true` and a sensible `target`/`module` for Node
 
 ## Group 2 — Application Entry Point
@@ -12,10 +12,11 @@
 5. Add a single `GET /` route returning `"AgentClinic is open for business"`
 6. Call `serve()` to bind the app to a port (default 3000)
 
-## Group 3 — Dev Script
+## Group 3 — Scripts
 
-7. Add `"dev": "tsx src/index.ts"` (or `tsx watch`) to `package.json` scripts
-8. Add `"typecheck": "tsc --noEmit"` to `package.json` scripts
+7. Add `"dev": "tsx watch src/index.tsx"` to `package.json`
+8. Add `"typecheck": "tsc --noEmit"` to `package.json`
+9. Add `"test": "vitest run"` to `package.json`
 
 ## Group 4 — Home Page
 
@@ -37,3 +38,4 @@
 18. Run `npm run typecheck` — must exit 0 with no errors
 19. Run `npm run dev` and confirm `curl localhost:3000` returns HTML containing the heading
 20. Confirm `curl localhost:3000/static/style.css` returns the CSS file
+21. Run `npm test` — must exit 0 with all tests passing
