@@ -50,11 +50,21 @@ We are writing Agent Clinic, a place for AI agents to get relief from
    - ''tech-stack.md'
    - 'roadmap.md' for high-levl implementation order, in very small phases
    of work.
-   Important: You *must* user your AskUserQuestion tool, grouped on these 3
-   before writing to disk
+   Important: You *must* user your AskUserQuestion tool, grouped on these 3, before writing to disk
 ```
 specifiy tone for mission based on project - playful, professional, etc.
 backend and frontend tech stack
 
 ```
-Find out next phase on specs/roadmap.md and make a branch, ask me about the feature spec
+Find out next phase on specs/roadmap.md and make a branch, ask me about the feature spec.
+Create:
+ - A new directory YYY-MM-DD-feature-name under specs for this feature work
+ - In there:
+    - 'plan.md' as a series of numbered task groups
+    - 'requirements.md' for the scope, decisions, context
+    - 'validationn.md' for how to know the implmentation succeeded and can be merged'
+
+Refer to specs/mission.md and specs/tech-stack.md for guidance
+
+Important: You *must* user your AskUserQuestion tool, grouped on these 3, before writing to disk
+```
